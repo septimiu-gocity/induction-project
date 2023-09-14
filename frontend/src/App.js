@@ -30,10 +30,6 @@ const recipes = [
 function App() {
     const [isAddingNewRecipe, setIsAddingNewRecipe] = useState(false);
 
-    useEffect(() => {
-        console.log(isAddingNewRecipe);
-    }, [isAddingNewRecipe]);
-
     return (
         <div className="container">
             <header>Recipe Book</header>
@@ -45,7 +41,7 @@ function App() {
                         setIsAddingNewRecipe(!isAddingNewRecipe);
                     }}
                 />
-                <h3>Add New Recipe</h3>
+                {isAddingNewRecipe ? <h3>Discard Recipe</h3> : <h3>Add New Recipe</h3>}
             </div>
             {isAddingNewRecipe && <AddNewRecipeForm />}
             <Recipes recipes={recipes}></Recipes>

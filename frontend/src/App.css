@@ -18,9 +18,9 @@
 
 .btn {
     display: inline-block;
-    background: #000;
-    color: #fff;
-    border: none;
+    background: rgb(252, 248, 242);
+    color: black;
+    border: 3px ridge black;
     padding: 10px 20px;
     margin: 5px;
     border-radius: 5px;
@@ -39,12 +39,14 @@ header {
 }
 
 .btn:hover {
-    background: #232323;
+    background: rgb(254, 253, 250);
 }
 
 .btn-adding {
     transform: rotate(45deg);
+    color: red
 }
+
 
 .btn-plus {
     font-size: 35px;
