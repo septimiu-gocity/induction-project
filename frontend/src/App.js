@@ -1,9 +1,8 @@
-
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
-import AddNewRecipeTab from "./components/AddNewRecipeTab";
 import AddNewRecipeForm from "./components/AddNewRecipeForm";
 import Recipes from "./components/Recipes";
+import Button from "./components/Button";
 
 const recipes = [
     {
@@ -31,11 +30,23 @@ const recipes = [
 function App() {
     const [isAddingNewRecipe, setIsAddingNewRecipe] = useState(false);
 
+    useEffect(() => {
+        console.log(isAddingNewRecipe);
+    }, [isAddingNewRecipe]);
+
     return (
         <div className="container">
             <header>Recipe Book</header>
-
-            <AddNewRecipeTab/>
+            <div id="recipe-tab">
+                <Button
+                    text="+"
+                    className={`btn-plus ${isAddingNewRecipe ? "btn-adding" : ""}`}
+                    onClick={() => {
+                        setIsAddingNewRecipe(!isAddingNewRecipe);
+                    }}
+                />
+                <h3>Add New Recipe</h3>
+            </div>
             {isAddingNewRecipe && <AddNewRecipeForm />}
             <Recipes recipes={recipes}></Recipes>
         </div>

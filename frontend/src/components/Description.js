@@ -10,7 +10,7 @@ export default function Description({ ingredients, prepSteps }) {
                 ))}
             </ul>
             <br></br>
-            <h2 className="subtitle">Preparation Steps</h2>
+            <h2 className="desc-subtitle">Preparation Steps</h2>
             <ul className="desc-list">
                 {prepSteps.map((step, index) => (
                     <li key={index}>{step}</li>
