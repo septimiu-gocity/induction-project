@@ -21,7 +21,7 @@
     background: rgb(252, 248, 242);
     color: black;
     border: 3px ridge black;
-    padding: 10px 20px;
+    padding: 5px 10px;
     margin: 5px;
     border-radius: 5px;
     cursor: pointer;
@@ -40,6 +40,10 @@ header {
 
 .btn:hover {
     background: rgb(254, 253, 250);
+}
+
+.btn:active {
+    transform: scale(0.98);
 }
 
 .btn-adding {
@@ -77,7 +81,7 @@ header {
 
 .desc-list {
     font-size: 20px;
-    padding-left: 15px;
+    padding-left: 20px;
 }
 
 .desc-subtitle {
@@ -107,7 +111,37 @@ header {
     padding: 10px 20px 10px 20px;
 }
 
+
+
 .recipe-input {
+    display: block;
+    font-size: 22px;
+    background-color: rgb(252, 248, 242);
+    border: none;
+    border-radius: 6px;
+    padding: 3px;
+    padding-left: 5px;
+    width: 100%;
+}
+
+.recipe-input.recipe-input-title {
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.recipe-input:focus {
+    outline: 1px ridge black;
+}
+
+
+.new-desc-wrapper {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    border-top: 2px ridge black;
+}
+
+.add-new-recipe-li {
     display: block;
     font-size: 22px;
     background-color: rgb(252, 248, 242);
@@ -117,16 +151,4 @@ header {
     padding-left: 5px;
     width: 100%;
     min-height: 100px;
-}
-
-.recipe-input.title {
-    font-size: 22px;
-    min-height: auto;
-}
-
-.new-desc-wrapper {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding-top: 10px;
-    border-top: 2px ridge black;
 }
