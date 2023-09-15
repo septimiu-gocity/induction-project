@@ -1,8 +1,8 @@
 import React from 'react'
 import {AiFillEdit} from 'react-icons/ai'
-export default function EditButton({editRecipe}) {
+export default function EditButton({toggleEdit}) {
   return (
-    <div id='edit-button' onClick={editRecipe}> 
+    <div id='edit-button' onClick={toggleEdit}> 
         <AiFillEdit/>
     </div>
   )

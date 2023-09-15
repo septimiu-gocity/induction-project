@@ -11,6 +11,7 @@ export default function AddNewRecipeForm({ onSubmit }) {
         e.preventDefault();
 
         onSubmit({
+            id: Math.floor(Math.random() * 10000000 + 1),
             title: title,
             ingredients: ingredients,
             prepSteps: prepSteps,
