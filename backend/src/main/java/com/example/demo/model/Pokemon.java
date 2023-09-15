@@ -5,7 +5,7 @@ import java.util.List;
 public class Pokemon {
 
     public static final Pokemon PIKACHU = new Pokemon(25, "pikachu", 4, 60, List.of("electric"),
-        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png");
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png");
 
     private final int id;
     private final String name;
@@ -50,12 +50,12 @@ public class Pokemon {
     @Override
     public String toString() {
         return "Pokemon{" +
-            "id=" + id +
-            ", name='" + name + '\'' +
-            ", height=" + height +
-            ", weight=" + weight +
-            ", types=" + types +
-            ", sprite='" + sprite + '\'' +
-            '}';
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", height=" + height +
+                ", weight=" + weight +
+                ", types=" + types +
+                ", sprite='" + sprite + '\'' +
+                '}';
     }
 }

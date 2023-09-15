@@ -74,12 +74,12 @@ public class PokemonDao {
     @Override
     public String toString() {
         return "PokemonDao{" +
-            "id=" + id +
-            ", name='" + name + '\'' +
-            ", height=" + height +
-            ", weight=" + weight +
-            ", types=" + types +
-            ", sprite='" + sprite + '\'' +
-            '}';
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", height=" + height +
+                ", weight=" + weight +
+                ", types=" + types +
+                ", sprite='" + sprite + '\'' +
+                '}';
     }
 }
